@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MELT</title>
+	<link rel="stylesheet" href="normalize.css" media="all">
+	<link rel="stylesheet" href="styles.css" media="all">
+</head>
+<body>
+	<aside>
+    	<h1>MELT</h1>
+    	<p>Connor Braa</p>
+	</aside>
+	<div class="content">
+		<ul>
+			<li><img src="img/1.jpg"></li>
+            <li>
+              <img class="portrait" src="img/2A.jpg">
+              <img class="portrait" src="img/2B.jpg">
+              <img class="portrait" src="img/2C.jpg">
+            </li>
+            <li><img src="img/3.jpg"></li>
+            <li><img src="img/4.jpg"></li>
+            <li><img src="img/5.jpg"></li>
+            <li>
+              <img class="portrait" src="img/6A.jpg">
+              <img class="portrait" src="img/6B.jpg">
+              <img class="portrait" src="img/6C.jpg">
+            </li>
+            <li><img src="img/7.jpg"></li>
+            <li><img src="img/9.jpg"></li>
+            <li><img src="img/final.jpg"></li>
+		</ul>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.content').width($(window).width() -240);
+
+			$(window).resize(function(){
+				if($(window).width() > 600) {
+					$('.content').width($(window).width() -240);
+				} else {
+					$('.content').width($(window).width());
+				}
+			});
+		});
+	</script>
+</body>
+</html>

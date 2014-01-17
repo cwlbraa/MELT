@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html, button, input, select, textarea {
+	color: #222;
+}
+
+body {
+	font-size: 16px;
+	line-height: 8px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300; /* remove if too light */
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 5px;
+	font-weight: 500;
+}
+
+p {
+
+}
+
+aside {
+	position: fixed;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	text-align: right;
+	z-index: 1;
+}
+
+.content {
+	position: relative;
+	width: 960px;
+	height: auto;
+	left: 240px;
+	text-align: left;
+}
+
+.content img {
+	max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.content img.portrait {
+  margin: 0;
+  margin-right: 0;
+  width: 33.333%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.content img.portrait:last-child {
+  margin-right: 0;
+}
+
+.content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.content li {
+    max-width: 100%;
+}
+
+/* media queries n shit min-width 420 */
+@media handheld, only screen and (max-width: 420px) {
+    body {
+        font-size: 15px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+	aside {
+        display: none;
+    }
+
+    .content {
+        position: relative;
+        left: 0;
+    }
+
+    .wrap .menu {
+        display: block;
+    }
+}
